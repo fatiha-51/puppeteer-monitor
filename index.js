@@ -59,4 +59,8 @@ app.post('/check', async (req, res) => {
 app.listen(3000, () => {
   console.log('🧠 Puppeteer monitor running on port 3000');
 });
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 
